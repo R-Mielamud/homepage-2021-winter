@@ -10,6 +10,17 @@ body {
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body.secretway {
+	animation-name: rainbow;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+body:not(.secretway) .secretway-activated {
+	display: none;
+}
+
 main {
 	box-sizing: border-box;
 	padding: 30vh 1rem;
@@ -110,4 +121,49 @@ h3 {
 	box-sizing: border-box;
 	width: 50%;
 	padding: 0 1rem;
+}
+
+.tip {
+	transform: rotateX(180deg);
+	backface-visibility: visible;
+	text-align: center;
+	padding-top: 1rem;
+}
+
+@keyframes rainbow {
+	0% {
+		text-shadow: none;
+	}
+
+	12.5% {
+		text-shadow: 1px 1px 0 red;
+	}
+
+	25% {
+		text-shadow: 2px 2px 0 orange;
+	}
+
+	37.5% {
+		text-shadow: 3px 3px 0 yellow;
+	}
+
+	50% {
+		text-shadow: 4px 4px 0 green;
+	}
+
+	62.5% {
+		text-shadow: 5px 5px 0 aqua;
+	}
+
+	75% {
+		text-shadow: 6px 6px 0 blue;
+	}
+
+	75% {
+		text-shadow: 7px 7px 0 violet;
+	}
+
+	75% {
+		text-shadow: 8px 8px 0 white;
+	}
 }
