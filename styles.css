@@ -15,6 +15,11 @@ main {
 	padding: 30vh 1rem;
 }
 
+.icon {
+	font-size: 2rem;
+	color: yellow;
+}
+
 .inner-frame {
 	box-sizing: border-box;
 	border: 1rem solid yellow;
@@ -32,4 +37,27 @@ main {
 .avatar {
 	height: 300px;
 	border-radius: 50%;
+}
+
+.contacts {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0.5rem 0;
+	cursor: pointer;
+	text-decoration: none;
+	color: white !important;
+}
+
+.contact .icon {
+	opacity: 0.7;
+}
+
+.contact:hover .icon {
+	opacity: 1;
 }
