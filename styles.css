@@ -101,3 +101,13 @@ h3 {
 	height: var(--size);
 	border-radius: 50%;
 }
+
+.columns {
+	display: flex;
+}
+
+.column {
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0 1rem;
+}
